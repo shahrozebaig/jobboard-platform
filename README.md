@@ -75,22 +75,77 @@ npm run dev
 
 
 jobboard-platform/
-├── app/ # Next.js app directory
-│ ├── api/ # API routes
-│ ├── jobs/ # Job-related pages
-│ ├── login/ # Login page
-│ ├── signup/ # Signup page
-│ └── layout.tsx # Root layout
-├── components/ # React components
-│ ├── auth/ # Authentication components
-│ ├── ui/ # UI components
-│ └── job-list.tsx # Job listing component
-├── lib/ # Utility functions
-│ ├── mongodb.ts # MongoDB configuration
-│ └── store.ts # State management
-├── models/ # Database models
-├── public/ # Static files
-└── styles/ # Global styles
+├── app/
+│   ├── api/
+│   │   ├── auth/
+│   │   │   ├── login/
+│   │   │   │   └── route.ts
+│   │   │   └── register/
+│   │   │       └── route.ts
+│   │   └── jobs/
+│   │       ├── route.ts
+│   │       └── [id]/
+│   │           └── route.ts
+│   ├── jobs/
+│   │   ├── page.tsx
+│   │   └── [id]/
+│   │       └── page.tsx
+│   ├── login/
+│   │   └── page.tsx
+│   ├── signup/
+│   │   └── page.tsx
+│   ├── post-job/
+│   │   └── page.tsx
+│   ├── dashboard/
+│   │   └── page.tsx
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+├── components/
+│   ├── auth/
+│   │   ├── login-form.tsx
+│   │   └── signup-form.tsx
+│   ├── jobs/
+│   │   ├── job-card.tsx
+│   │   ├── job-list.tsx
+│   │   └── job-details.tsx
+│   ├── ui/
+│   │   ├── button.tsx
+│   │   ├── input.tsx
+│   │   ├── card.tsx
+│   │   └── other-shadcn-components...
+│   ├── layout/
+│   │   ├── header.tsx
+│   │   └── footer.tsx
+│   └── shared/
+│       ├── loading-spinner.tsx
+│       └── error-message.tsx
+├── lib/
+│   ├── mongodb.ts
+│   ├── auth.ts
+│   ├── utils.ts
+│   └── types.ts
+├── hooks/
+│   ├── useAuth.ts
+│   ├── useJobs.ts
+│   └── useForm.ts
+├── models/
+│   ├── User.ts
+│   └── Job.ts
+├── public/
+│   ├── images/
+│   └── icons/
+├── styles/
+│   └── custom-styles.css
+├── config/
+│   └── constants.ts
+├── .env.local
+├── .gitignore
+├── next.config.js
+├── package.json
+├── tsconfig.json
+├── tailwind.config.ts
+└── README.md
 
 
 

@@ -74,6 +74,7 @@ npm run dev
 ## Project Structure
 
 
+```
 jobboard-platform/
 ├── app/
 │   ├── api/
@@ -146,6 +147,7 @@ jobboard-platform/
 ├── tsconfig.json
 ├── tailwind.config.ts
 └── README.md
+```
 
 
 
